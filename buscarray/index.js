@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')()
 const array = [5,7,52,41,95,36,48,25,84,24]
-let cont = 0;
+let cont = '';
 console.log('Digite um numero de 0 a 100 e descubra se ele esta salvo em um array oculto');
 let ent=+prompt()
 if(!isNaN(ent)){
@@ -11,7 +11,7 @@ if(!isNaN(ent)){
             break;
         }
     }
-    if(cont=='0'){
+    if(!cont){
         console.log("Esse numero não esta no array");
     }
 }
